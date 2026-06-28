@@ -34,7 +34,7 @@ function TaskList()
 
     const handleDelete = (id) =>
     {
-        fetch("http://localhost:9000/tasks/" + id,
+        fetch("https://task-tracker-wwlk.onrender.com/tasks/" + id,
         {
             method: "DELETE"
         })
