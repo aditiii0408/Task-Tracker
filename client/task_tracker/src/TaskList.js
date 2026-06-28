@@ -15,7 +15,7 @@ function TaskList()
 
     const loadTasks = () =>
     {
-        fetch("http://localhost:9000/tasks")
+        fetch("https://task-tracker-wwlk.onrender.com/tasks")
         .then(response => response.json())
         .then(data =>
         {
@@ -53,7 +53,7 @@ function TaskList()
 
     const handleUpdate = (id, doc) =>
     {
-        fetch("http://localhost:9000/tasks/" + id,
+        fetch("https://task-tracker-wwlk.onrender.com/tasks/" + id,
         {
             method: "PUT",
             headers: { "Content-Type": "application/json" },

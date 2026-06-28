@@ -101,4 +101,8 @@ app.delete("/tasks/:id", (req, res) =>
     });
 });
 
-app.listen(9000, () => { console.log("ready to serve @9000"); });
+const PORT = process.env.PORT || 9000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
